@@ -25,9 +25,11 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
+        working-directory: ./apps/docs
         run: npm install
 
       - name: Build packages
+        working-directory: ./apps/docs
         run: npm run build
 
       #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
