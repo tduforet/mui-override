@@ -1,5 +1,6 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import {Typography} from "@athom/mui-override/components";
+import {Abc} from "@athom/mui-override/icons";
 
 
 const meta: Meta<typeof Typography> = {
