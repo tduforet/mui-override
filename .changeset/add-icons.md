@@ -1,5 +1,4 @@
 ---
-"docs": patch
 "@athom/mui-override": patch
 ---
 
