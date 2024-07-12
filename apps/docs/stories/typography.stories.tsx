@@ -16,7 +16,6 @@ type Story = StoryObj<typeof Typography>;
 export const Primary: Story = {
   render: ({children, ...rest}) => (
     <Typography {...rest}>
-      <Abc />
       {children}
     </Typography>
   ),
