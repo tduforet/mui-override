@@ -1,0 +1,1 @@
+export {default as Abc} from '@mui/icons-material/Abc'
