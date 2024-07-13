@@ -1,9 +1,9 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import {Button} from "@athom/mui-override/components";
+import {ButtonWrapped} from "@athom/mui-override/components";
 
 
-const meta: Meta<typeof Button> = {
-  component: Button,
+const meta: Meta<typeof ButtonWrapped> = {
+  component: ButtonWrapped,
   argTypes: {
     type: {
       control: {type: "radio"},
@@ -14,13 +14,13 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof ButtonWrapped>;
 
 
 export const Primary: Story = {
   render: (props) => (
     <>
-      <Button
+      <ButtonWrapped
         {...props}
         onClick={(): void => {
           // eslint-disable-next-line no-alert -- alert for demo
@@ -28,12 +28,13 @@ export const Primary: Story = {
         }}
       >
         Hello
-      </Button>
+      </ButtonWrapped>
     </>
   ),
   name: "Button",
   args: {
     children: "Hello",
     type: "button",
+    variant: 'contained'
   },
 };
